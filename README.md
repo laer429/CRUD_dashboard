@@ -1,2 +1,8 @@
 # CRUD_dashboard
-api 개발
+
+CRUD api 개발 연습
+
+- javascript
+- nodejs
+- express
+- mysql
