@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    게시글 수 : <%=data.length%>
+    <table border="1">
+        <tr>
+            <td>No.</td>
+            <td>작성자</td>
+            <td>제목</td>
+            <td>날짜</td>
+        </tr>
+        <% for (let i = 0; i <data.length; i++){ %>
+        <tr>
+            <td><%= i+1 %></td>
+            <td><%= data[i]['writer'] %></td>
+            <td><a href="http://localhost:3000/content/<%=data[i]['id']%>"><%= data[i]['title'] %></a></td>
+            <td><%= data[i]['created_at'] %></td>
+<!-- 싱글페이지로 제목클릭시 내용보이게 하기 -->
+        </tr>                  
+        <%} %>
+    <a href="http://localhost:3000/write">글쓰기</a>
+    </table>
+
+</body>
+
+</html>
