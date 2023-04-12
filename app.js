@@ -17,7 +17,7 @@ const conn = {
     host : '127.0.0.1',
     port : '3306',
     user : 'root',
-    password : 'myoojn0518!',
+    password : 'password',
     database : 'new_schema'
 };
 // DB 커넥션 생성
